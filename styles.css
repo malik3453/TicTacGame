@@ -1,0 +1,83 @@
+.container {
+    width: 80%;
+}
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0px; /* no gap */
+    justify-items: center;
+    align-items: center;
+    background-color: #F0F0F0;
+    border: 2px solid #333;
+    border-radius: 5px;
+    width: 600px; /* larger game board */
+    height: 600px; /* larger game board */
+}
+
+
+.error-board {
+    background-color: #F0F0F0;
+    border: 2px solid #333;
+    border-radius: 5px;
+    width: 600px; /* larger game board */
+    height: 100px; /* larger game board */
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 185px; /* larger cell */
+    height: 185px; /* larger cell */
+    border: 1px solid #333;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+
+/* Style Player Tables */
+table {
+    border: 2px solid #333;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.tableCell {
+    border: 1px solid #333;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+/* Style Player Tables' cells */
+table td {
+    text-align: center;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.small  {
+    font-size: 30px;
+}
+
+.medium  {
+    font-size: 40px;
+}
+
+.large  {
+    font-size: 50px;
+}
+
+/* Style the Start/Restart button */
+.btn-primary {
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.highlighted {
+    background-color: #FFD700; /* You can customize the color */
+}

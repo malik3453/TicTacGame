@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<div class="container text-center">
+    <button id="restart" class="btn btn-primary">Restart</button>
+    <br><br><br><br><br>
+    <div class="row">
+        <div class="col">
+            <h3>Player 1</h3>
+            <table id="player1Table" class="table table-bordered">
+                <tbody>
+                <!-- Player 1's move data goes here -->
+                <tr>
+                    <th class="small">Small</th>
+                    <td class="small"><div id="XS1" class="tableCell">X</div></td>
+                    <td class="small"><div id="XS2" class="tableCell">X</div></td>
+                    <td class="small"><div id="XS3" class="tableCell">X</div></td>
+                </tr>
+                <tr class="medium">
+                    <th>Medium</th>
+                    <td class="medium"><div id="XM1" class="tableCell">X</div></td>
+                    <td class="medium"><div id="XM2" class="tableCell">X</div></td>
+                    <td class="medium"><div id="XM3" class="tableCell">X</div></td>
+                </tr>
+                <tr>
+                    <th  class="large">Large</th>
+                    <td  class="large"><div id="XL1" class="tableCell">X</div></td>
+                    <td  class="large"><div id="XL2" class="tableCell">X</div></td>
+                    <td  class="large"><div id="XL3" class="tableCell">X</div></td>
+                </tr>
+                <!-- Add more rows for additional moves -->
+                </tbody>
+            </table>
+            <br><br><br>
+            <h3>Player 2</h3>
+            <table id="player2Table" class="table table-bordered">
+                <tbody>
+                <!-- Player 1's move data goes here -->
+                <tr>
+                    <th class="small">Small</th>
+                    <td class="small"><div id="YS1" class="tableCell">O</div></td>
+                    <td class="small"><div id="YS2" class="tableCell">O</div></td>
+                    <td class="small"><div id="YS3" class="tableCell">O</div></td>
+                </tr>
+                <tr>
+                    <th class="medium">Medium</th>
+                    <td class="medium"><div id="YM1" class="tableCell">O</div></td>
+                    <td class="medium"><div id="YM2" class="tableCell">O</div></td>
+                    <td class="medium"><div id="YM3" class="tableCell">O</div></td>
+                </tr>
+                <tr>
+                    <th  class="large">Large</th>
+                    <td  class="large"><div id="YL1" class="tableCell">O</div></td>
+                    <td  class="large"><div id="YL2" class="tableCell">O</div></td>
+                    <td  class="large"><div id="YL3" class="tableCell">O</div></td>
+                </tr>
+                <!-- Add more rows for additional moves -->
+                </tbody>
+            </table>
+        </div>
+
+
+        <!-- Game Board -->
+        <div class="col">
+
+            <div class="game-board">
+                <!-- Your 3D Tic-Tac-Toe board goes here -->
+                <div id="1" class="cell"></div>
+                <div id="2" class="cell"></div>
+                <div id="3" class="cell"></div>
+                <div id="4" class="cell"></div>
+                <div id="5" class="cell"></div>
+                <div id="6" class="cell"></div>
+                <div id="7" class="cell"></div>
+                <div id="8" class="cell"></div>
+                <div id="9" class="cell"></div>
+            </div>
+            <br>
+            <div id="board" class="error-board">
+                Error board
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/game.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
