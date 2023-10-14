@@ -155,8 +155,8 @@ class ApiResponse {
         return result;
     }
 }
-
-const host = 'tictactoe-production.up.railway.app';
+// const host = 'http://localhost:8080';
+const host = 'https://tictactoe-production.up.railway.app';
 const board = ['1Z0','2Z0','3ZO','4Z0','5Z0','6Z0','7Z0','8Z0','9Z0'];
 const firstClickIds = ['XS1', 'XS2', 'XS3', 'XM1', 'XM2', 'XM3', 'XL1', 'XL2', 'XL3', 'YS1', 'YS2', 'YS3', 'YM1', 'YM2', 'YM3', 'YL1', 'YL2', 'YL3'];
 const secondClickIds = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
