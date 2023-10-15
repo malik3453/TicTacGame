@@ -113,7 +113,7 @@ class Game {
 
     sendAPIRequest(data) {
         const apiURL = this.host + "/?gameBoard=" + data;
-        fetch(apiURL)
+        fetch(apiURL,{method:'GET'})
             .then(response => response.json())
             .then(data => {
                 const apiResponse = new ApiResponse(data);
